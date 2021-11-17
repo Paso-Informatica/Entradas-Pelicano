@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        html {
+            height: 100%;
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+            overflow: hidden;
+        }
+
+        body {
+            background: transparent;
+            color: #ffffff;
+        }
+
+        .bluelight {
+            text-shadow: 0 0 10px #3498DB,
+                0 0 20px #3498DB,
+                0 0 30px #3498DB,
+                0 0 40px #2980B9,
+                0 0 70px #2980B9,
+                0 0 80px #2980B9,
+                0 0 100px #2980B9,
+                0 0 150px #2980B9;
+        }
+
+        .clock {
+            overflow: hidden;
+        }
+
+        .col-md-12 {
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .top-pane {
+            margin-bottom: 0px;
+            border-radius: 5px 5px 0px 0px;
+            background-color: rgba(77, 208, 225, 0.9);
+            border: 0px;
+        }
+
+        .bottom-pane {
+            margin-top: 0px;
+            border-radius: 0px 0px 5px 5px;
+            background-color: rgba(63, 81, 181, 0.9);
+            border: 0px;
+        }
+
+        @media (min-width: 768px) {
+            .num {
+                font-size: 100px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .num {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .num {
+                font-size: 30px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .text {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .text {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-top: 75px;
+            }
+        }
+
+        h1 {
+            padding-top: 10px;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                margin-bottom: 75px;
+                font-size: 100px;
+            }
+        }
+
+        #bgVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="wrapper">
+        <div class="container text-center">
+            <div class="col-md-12">
+                <h1 id="header" class="">Prefinde Pelícano</h1>
+            </div>
+            <div class="col-md-4 col-xs-3">
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="clock">
+                    <div class="well top-pane">
+                        <div id="mins" class="num">65</div>
+                    </div>
+                    <div class="well bottom-pane">
+                        <div id="mins-text" class="text">Entradas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-3">
+            </div>
+            <div id="info" class="small"></div>
+        </div>
+    </div>
+</body>
+
+</html>
